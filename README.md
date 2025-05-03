@@ -1,46 +1,54 @@
 # Nome do Projeto
-> Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
+> ENEM+ | Plataforma Inteligente de Estudos para o ENEM
 
 ## 👨‍🎓 Integrantes
 - Nome do Estudante 1
-- Nome do Estudante 2
-- ...
 
 ## 💡 Ideia Principal
-Descreva em poucas linhas o que o projeto propõe fazer. 
-Pense como se estivesse explicando para alguém fora da área de tecnologia.
+O projeto propõe uma plataforma online onde estudantes que se preparam para o ENEM podem gerar questões personalizadas com base na área do conhecimento, dificuldade e ano da prova. Além disso, a plataforma oferece um painel (dashboard) para acompanhar o progresso e desempenho ao longo do tempo, ajudando os usuários a estudarem de forma mais eficiente e direcionada.
 
 ## 🎯 Objetivos
-- Liste de forma clara o que o sistema pretende resolver ou melhorar.
-- Pode usar bullets ou parágrafos curtos.
+- Ajudar estudantes a se prepararem melhor para o ENEM com questões no estilo da prova.
+- Permitir a personalização das questões por ano, matéria e dificuldade.
+- Acompanhar o desempenho individual dos usuários com gráficos e estatísticas.
+- Fornecer uma interface simples, intuitiva e acessível.
 
 ## 👥 Público-Alvo
-Quem se beneficia com esse projeto? Um setor específico? Um tipo de usuário?
+Estudantes do ensino médio e pessoas que desejam prestar o ENEM, especialmente aquelas que estudam por conta própria e precisam de uma ferramenta prática e personalizada.
 
 ## 🤖 Agentes Envolvidos
-Liste os agentes que existirão no sistema e suas funções.
-Exemplo:
-- Agente A: coleta dados
-- Agente B: toma decisões
-- Agente C: executa ações no ambiente
+- **Usuário (Estudante):** seleciona filtros de geração, responde às questões e acessa o dashboard.
+- **Sistema de Geração (LLM):** cria questões conforme os critérios definidos.
+- **Dashboard de Desempenho:** analisa e exibe o histórico de acertos, erros e evolução do estudante.
 
 ## 🧱 Tecnologias Pretendidas
-- Linguagem de programação
-- Bibliotecas e frameworks
-- Ferramentas para teste, simulação, visualização, etc.
+- **Linguagem de programação:** JavaScript/TypeScript
+- **Front-end:** React.js (pela sua flexibilidade e ecossistema robusto)
+- **Back-end:** Node.js + Express (leve, rápido e com ampla comunidade)
+- **Banco de dados:** SQLite (relacional, robusto e gratuito)
+- **LLM (modelo de linguagem):** OpenAI GPT ou similar (pela capacidade de gerar conteúdo textual coerente e variado)
+- **Visualização de dados:** Recharts ou Chart.js (para montar o dashboard)
+- **Versionamento:** Git + GitHub
 
-> Justifique, sempre que possível, **por que escolheu cada ferramenta**.
+> Essas ferramentas foram escolhidas por serem amplamente usadas, terem boa documentação e permitirem desenvolvimento rápido e eficiente.
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
-- Quais dados o sistema recebe?
+- Filtros escolhidos pelo usuário (ano da prova, disciplina, nível de dificuldade)
+- Respostas do usuário às questões
 
 **Saídas:**
-- Quais ações ou informações ele gera?
+- Questões geradas de forma dinâmica
+- Feedback de acertos e erros
+- Estatísticas de desempenho no dashboard (acertos por matéria, evolução, etc.)
 
 ## 🔁 Interação entre os Agentes
-Descreva como os agentes vão se comunicar ou se coordenar.
-Pode ser uma descrição textual ou um fluxograma em breve.
+1. O usuário escolhe os critérios de geração de questões.
+2. O sistema envia a solicitação ao gerador de questões (LLM).
+3. As questões são exibidas para o usuário.
+4. Após as respostas, o sistema registra os dados e atualiza o dashboard com as novas estatísticas.
+
+> Um fluxograma ilustrativo será adicionado em breve ao repositório.
 
 ## 🗂️ Organização e Planejamento do Projeto
 O progresso deste projeto será monitorado através do **GitHub Projects**.
@@ -50,24 +58,24 @@ O progresso deste projeto será monitorado através do **GitHub Projects**.
 - Tarefas em andamento
 - Tarefas concluídas
 
-Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.
-Use etiquetas (labels) e comentários para detalhar o andamento e as decisões.
+Cada integrante será responsável por pelo menos uma tarefa no quadro.
+Utilizaremos etiquetas (labels) e comentários para detalhar decisões e progresso.
 
 ## 📌 Status Inicial do Projeto
-- [ ] Ideia discutida e validada com o professor
-- [ ] Estrutura básica do repositório criada
-- [ ] Quadro no GitHub Projects criado
+- [X] Ideia discutida e validada com o professor
+- [X] Estrutura básica do repositório criada
+- [X] Quadro no GitHub Projects criado
 - [ ] Primeiras tarefas definidas e atribuídas
 
 ## 📄 Documentação Futura
-Este repositório poderá incluir:
-- Diagramas de arquitetura
-- Relatórios parciais de progresso
-- Scripts de testes ou simulações
-- Resultados e conclusões finais
+Este repositório incluirá:
+- Diagramas de arquitetura do sistema
+- Relatórios de progresso do desenvolvimento
+- Scripts para testes de funcionalidades
+- Resultados finais e conclusões do projeto
 
 ## 👨‍🏫 Acompanhamento pelo Professor
-Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igorbarcosta` como colaborador do repositório.**
+Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igormago` como colaborador do repositório.**
 
 ### Como fazer:
 1. Vá até a aba **"Settings"** do seu repositório.
