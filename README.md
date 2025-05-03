@@ -2,7 +2,7 @@
 > ENEM+ | Plataforma Inteligente de Estudos para o ENEM
 
 ## 👨‍🎓 Integrantes
-- Nome do Estudante 1
+- Mateus Braga de Melo
 
 ## 💡 Ideia Principal
 O projeto propõe uma plataforma online onde estudantes que se preparam para o ENEM podem gerar questões personalizadas com base na área do conhecimento, dificuldade e ano da prova. Além disso, a plataforma oferece um painel (dashboard) para acompanhar o progresso e desempenho ao longo do tempo, ajudando os usuários a estudarem de forma mais eficiente e direcionada.
