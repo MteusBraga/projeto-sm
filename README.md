@@ -1,5 +1,4 @@
-# Nome do Projeto
-> ENEM+ | Plataforma Inteligente de Estudos para o ENEM
+# Plataforma inteligente de exercícios prático para vestibular
 
 ## 👨‍🎓 Integrantes
 - Mateus Braga de Melo
