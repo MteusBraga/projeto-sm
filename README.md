@@ -64,13 +64,20 @@ Estudantes do ensino médio e pessoas que desejam prestar o ENEM, especialmente 
 
 
 ## 🗂️ Organização e Planejamento do Projeto
-O progresso deste projeto será monitorado através do **GitHub Projects**.
-
-> Acesse a aba "Projects" do repositório para acompanhar:
 - Tarefas pendentes
+  - Dashboard
+  - implementação dos agentes
 - Tarefas em andamento
+  - Implementar
+  - componente listagem de questoes
+  - signin front
 - Tarefas concluídas
-
+  - escolha das tecnologias
+  - signin / signup (backend)
+  - signup (frontend)
+  - componente filtro
+  - autenticação jwt
+     
 Cada integrante será responsável por pelo menos uma tarefa no quadro.
 Utilizaremos etiquetas (labels) e comentários para detalhar decisões e progresso.
 
@@ -78,11 +85,10 @@ Utilizaremos etiquetas (labels) e comentários para detalhar decisões e progres
 - [X] Ideia discutida e validada com o professor
 - [X] Estrutura básica do repositório criada
 - [X] Quadro no GitHub Projects criado
-- [ ] Primeiras tarefas definidas e atribuídas
+- [X] Primeiras tarefas definidas e atribuídas
 
 ## 📄 Documentação Futura
 Este repositório incluirá:
-- Diagramas de arquitetura do sistema
 - Relatórios de progresso do desenvolvimento
 - Scripts para testes de funcionalidades
 - Resultados finais e conclusões do projeto
