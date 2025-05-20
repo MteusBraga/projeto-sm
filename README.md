@@ -17,38 +17,51 @@ O projeto propõe uma plataforma online onde estudantes que se preparam para o E
 Estudantes do ensino médio e pessoas que desejam prestar o ENEM, especialmente aquelas que estudam por conta própria e precisam de uma ferramenta prática e personalizada.
 
 ## 🤖 Agentes Envolvidos
-- **Usuário (Estudante):** seleciona filtros de geração, responde às questões e acessa o dashboard.
-- **Sistema de Geração (LLM):** cria questões conforme os critérios definidos.
-- **Dashboard de Desempenho:** analisa e exibe o histórico de acertos, erros e evolução do estudante.
+- **Agente gerador:** gera questões multidisciplinares e com diferentes níveis de dificuldade e retorna em formato json.
+- **Agente revisor:** valida a correção do conteúdo, gramática, estilo e clareza das alternativas.
+- **Agente validador:** detecta possíveis ambiguidades ou múltiplas corretas.
+- **Agente de feedback:** avaliar resposta do aluno e fornecer um feedback bem detalhado.
 
 ## 🧱 Tecnologias Pretendidas
-- **Linguagem de programação:** JavaScript/TypeScript
-- **Front-end:** React.js (pela sua flexibilidade e ecossistema robusto)
-- **Back-end:** Node.js + Express (leve, rápido e com ampla comunidade)
-- **Banco de dados:** SQLite (relacional, robusto e gratuito)
-- **LLM (modelo de linguagem):** OpenAI GPT ou similar (pela capacidade de gerar conteúdo textual coerente e variado)
-- **Visualização de dados:** Recharts ou Chart.js (para montar o dashboard)
+- **Linguagem de programação:** TypeScript
+- **Front-end:** Nextjs
+- **Back-end:** Node.js + Express 
+- **Banco de dados:** SQLite 
+- **LLM (modelo de linguagem):** OpenAI GPT ou similar 
 - **Versionamento:** Git + GitHub
 
 > Essas ferramentas foram escolhidas por serem amplamente usadas, terem boa documentação e permitirem desenvolvimento rápido e eficiente.
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
-- Filtros escolhidos pelo usuário (ano da prova, disciplina, nível de dificuldade)
+- Filtros escolhidos pelo usuário (assunto, disciplina, nível de dificuldade)
 - Respostas do usuário às questões
 
 **Saídas:**
-- Questões geradas de forma dinâmica
+- Questões geradas por llm
 - Feedback de acertos e erros
-- Estatísticas de desempenho no dashboard (acertos por matéria, evolução, etc.)
+- Estatísticas de desempenho no dashboard
 
 ## 🔁 Interação entre os Agentes
-1. O usuário escolhe os critérios de geração de questões.
-2. O sistema envia a solicitação ao gerador de questões (LLM).
-3. As questões são exibidas para o usuário.
-4. Após as respostas, o sistema registra os dados e atualiza o dashboard com as novas estatísticas.
 
-> Um fluxograma ilustrativo será adicionado em breve ao repositório.
+```plaintext
+[Usuário escolhe parâmetros]
+         ↓
+[Agente Gerador]
+         ↓
+[Agente Revisor] → [Agente Validador]
+         ↓
+[Questão validada]
+         ↓
+[Frontend exibe questão ao aluno]
+         ↓
+[Usuário responde]
+         ↓
+[Agente de Feedback gera resposta explicativa]
+         ↓
+[Dashboard registra desempenho e mostra progresso]
+```
+
 
 ## 🗂️ Organização e Planejamento do Projeto
 O progresso deste projeto será monitorado através do **GitHub Projects**.
@@ -75,10 +88,5 @@ Este repositório incluirá:
 - Resultados finais e conclusões do projeto
 
 ## 👨‍🏫 Acompanhamento pelo Professor
-Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igormago` como colaborador do repositório.**
+[Igor Costa](https://github.com/igorbarcosta)
 
-### Como fazer:
-1. Vá até a aba **"Settings"** do seu repositório.
-2. Clique em **"Collaborators"** no menu lateral.
-3. Digite o nome de usuário: `igormago`
-4. Clique em **"Add collaborator"** e confirme.
