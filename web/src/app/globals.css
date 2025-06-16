@@ -1,0 +1,7 @@
+:root {
+  font-family: var(--font-poppins), sans-serif;
+}
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark, light;
+}
